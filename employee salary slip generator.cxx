@@ -5,7 +5,7 @@ int main() {
     int empId;
     float basic, hra, da, pf, netSalary;
 
-    // Input
+ 
     printf("Enter Employee Name: ");
     scanf(" %[^\n]", name);
 
@@ -15,14 +15,13 @@ int main() {
     printf("Enter Basic Salary: ");
     scanf("%f", &basic);
 
-    // Calculations
-    hra = basic * 0.20;   // 20% HRA
-    da  = basic * 0.10;   // 10% DA
-    pf  = basic * 0.08;   // 8% PF deduction
+    hra = basic * 0.20;  
+    da  = basic * 0.10;   
+    pf  = basic * 0.08;   
 
     netSalary = basic + hra + da - pf;
 
-    // Output Salary Slip
+
     printf("\n\n------ SALARY SLIP ------\n");
     printf("Employee Name : %s\n", name);
     printf("Employee ID   : %d\n", empId);
